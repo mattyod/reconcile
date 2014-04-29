@@ -22,14 +22,14 @@
   "devDependencies": {
     "mocha": "1.18.2",
     "chai": "1.9.1",
-    "sinon": "1.9.0",
+    "sinon": "1.9.1",
     "sinon-chai": "2.5.0",
-    "jshint": "2.4.4"
+    "jshint": "2.5.0"
   },
   "scripts": {
-    "hooks": " chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
+    "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
     "lint": "./node_modules/jshint/bin/jshint ./",
-    "unit": "mocha test/unit",
+    "unit": "mocha test",
     "test": "npm run lint && npm run unit && npm run acceptance"
   }
 }
