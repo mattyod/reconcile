@@ -1,0 +1,35 @@
+{
+  "name": "reconcile",
+  "description": "Reconcile a relative path with another",
+  "version": "0.0.1",
+  "keywords": [
+    "path",
+    "resolve",
+    "relative",
+    "reconcile"
+  ],
+  "author": {
+    "name": "Matthew O'Donoghue"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattyod/reconcile"
+  },
+  "bugs": {
+    "url": "https://github.com/mattyod/reconcile/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.18.2",
+    "chai": "1.9.1",
+    "sinon": "1.9.0",
+    "sinon-chai": "2.5.0",
+    "jshint": "2.4.4"
+  },
+  "scripts": {
+    "hooks": " chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
+    "lint": "./node_modules/jshint/bin/jshint ./",
+    "unit": "mocha test/unit",
+    "test": "npm run lint && npm run unit && npm run acceptance"
+  }
+}
